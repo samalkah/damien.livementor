@@ -20,23 +20,29 @@
       padding: 100px 24px;
     }
 
+    /* HEADER */
+    .header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 32px;
+      background-color: #eaeaea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      color: #555;
+    }
+
     h1 {
       font-size: 44px;
       font-weight: 600;
       letter-spacing: -0.02em;
-      margin-bottom: 24px;
-    }
-
-    h2 {
-      font-size: 22px;
-      font-weight: 500;
-      margin-top: 80px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #333;
       margin-bottom: 20px;
     }
 
@@ -44,6 +50,35 @@
       font-size: 20px;
       color: #222;
       max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-top: 90px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .icon {
+      font-size: 22px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
     }
 
     ul {
@@ -56,15 +91,15 @@
       margin-bottom: 10px;
     }
 
-    .separator {
-      margin: 80px 0;
-      border: none;
-      border-top: 1px solid #e5e5e5;
-    }
-
     .highlight {
       font-weight: 500;
       color: #000;
+    }
+
+    .separator {
+      margin: 90px 0;
+      border: none;
+      border-top: 1px solid #e5e5e5;
     }
 
     .footer {
@@ -78,62 +113,90 @@
 <body>
   <main class="page">
 
-    <h1>Cours particuliers de mathématiques à Strasbourg</h1>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="avatar">👤</div>
 
-    <p class="lead">
-      Accompagnement individuel pour collégiens et lycéens.<br />
-      Préparation au Brevet et au Baccalauréat.
-    </p>
+      <h1>Cours particuliers de mathématiques à Strasbourg</h1>
+
+      <p class="lead">
+        Accompagnement individuel pour collégiens et lycéens.<br />
+        Préparation au Brevet et au Baccalauréat.
+      </p>
+    </div>
+
+    <!-- APPROCHE -->
+    <section>
+      <div class="section-title">
+        <span class="icon">🎓</span>
+        <h2>Approche</h2>
+      </div>
+
+      <p>
+        Enseignant en informatique en <span class="highlight">BTS SIO et à l’Université</span>,
+        titulaire d’un <span class="highlight">Master en Réseaux et Télécommunications</span>,
+        j’enseigne depuis plus de <span class="highlight">10 ans</span>.
+      </p>
+
+      <p>
+        J’ai accompagné pendant <span class="highlight">5 années</span> des collégiens et lycéens
+        en cours particuliers de mathématiques, avec une approche fondée sur la compréhension,
+        la méthode et la progression dans la durée.
+      </p>
+    </section>
+
+    <!-- PROPOSITION -->
+    <section>
+      <div class="section-title">
+        <span class="icon">📐</span>
+        <h2>Ce que je propose</h2>
+      </div>
+
+      <ul>
+        <li>Consolidation des bases et remise en confiance</li>
+        <li>Développement du raisonnement et de la rigueur</li>
+        <li>Méthodologie de travail durable</li>
+        <li>Préparation ciblée aux examens</li>
+      </ul>
+    </section>
+
+    <!-- ORGANISATION -->
+    <section>
+      <div class="section-title">
+        <span class="icon">🕒</span>
+        <h2>Organisation</h2>
+      </div>
+
+      <ul>
+        <li>Cours à domicile à Strasbourg (zones accessibles à vélo)</li>
+        <li>Séances de <span class="highlight">1h30 minimum</span> (jusqu’à 2h)</li>
+        <li>Créneau hebdomadaire fixe privilégié</li>
+        <li>Cours en ligne possibles en complément</li>
+      </ul>
+
+      <p>
+        Afin de garantir un suivi sérieux et personnalisé,
+        <span class="highlight">le nombre d’élèves suivis est volontairement limité</span>.
+      </p>
+    </section>
+
+    <!-- TARIFS -->
+    <section>
+      <div class="section-title">
+        <span class="icon">💶</span>
+        <h2>Tarifs</h2>
+      </div>
+
+      <p>
+        70 € / heure<br />
+        Soit 35 € / heure après crédit d’impôt<br />
+        <span class="highlight">CESU accepté</span>
+      </p>
+    </section>
 
     <hr class="separator" />
 
-    <h2>Approche</h2>
-
-    <p>
-      Enseignant en informatique en <span class="highlight">BTS SIO et à l’Université</span>,
-      titulaire d’un <span class="highlight">Master en Réseaux et Télécommunications</span>,
-      j’enseigne depuis plus de <span class="highlight">10 ans</span>.
-    </p>
-
-    <p>
-      J’ai accompagné pendant <span class="highlight">5 années</span> des collégiens et lycéens
-      en cours particuliers de mathématiques, avec une approche fondée sur la compréhension,
-      la méthode et la progression dans la durée.
-    </p>
-
-    <h2>Ce que je propose</h2>
-
-    <ul>
-      <li>Consolidation des bases et remise en confiance</li>
-      <li>Développement du raisonnement et de la rigueur</li>
-      <li>Méthodologie de travail durable</li>
-      <li>Préparation ciblée aux examens</li>
-    </ul>
-
-    <h2>Organisation</h2>
-
-    <ul>
-      <li>Cours à domicile à Strasbourg (zones accessibles à vélo)</li>
-      <li>Séances de <span class="highlight">1h30 minimum</span> (jusqu’à 2h)</li>
-      <li>Créneau hebdomadaire fixe privilégié</li>
-      <li>Cours en ligne possibles en complément</li>
-    </ul>
-
-    <p>
-      Afin de garantir un suivi sérieux et personnalisé,
-      <span class="highlight">le nombre d’élèves suivis est volontairement limité</span>.
-    </p>
-
-    <h2>Tarifs</h2>
-
-    <p>
-      70 € / heure<br />
-      Soit 35 € / heure après crédit d’impôt<br />
-      <span class="highlight">CESU accepté</span>
-    </p>
-
-    <hr class="separator" />
-
+    <!-- FOOTER -->
     <div class="footer">
       <p>
         Premier échange téléphonique afin d’évaluer les besoins de l’élève
