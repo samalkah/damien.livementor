@@ -115,6 +115,23 @@
     .phone {
       margin-top: 16px;
     }
+    /* Animation douce au chargement */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Page entière */
+.page {
+  animation: fadeUp 0.6s ease-out both;
+}
+
   </style>
 </head>
 
