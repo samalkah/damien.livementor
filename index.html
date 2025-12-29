@@ -4,49 +4,98 @@
     <meta charset="UTF-8">
     <title>Cours de mathématiques à domicile – Collège & Lycée</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #222;
+            font-family: "Georgia", "Times New Roman", serif;
+            background-color: #f4f5f7;
+            color: #1f1f1f;
             margin: 0;
             padding: 0;
         }
+
         .container {
-            max-width: 700px;
-            margin: 40px auto;
+            max-width: 720px;
+            margin: 60px auto;
             background: #ffffff;
-            padding: 40px;
-            border-radius: 6px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 50px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
         }
+
+        .header {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .photo {
+            width: 120px;
+            height: 150px;
+            background-color: #e0e0e0;
+            border-radius: 2px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         h1 {
-            font-size: 26px;
-            margin-bottom: 20px;
+            font-size: 28px;
+            margin: 0 0 10px 0;
+            font-weight: normal;
         }
+
+        .subtitle {
+            font-size: 16px;
+            color: #555;
+        }
+
+        section {
+            margin-top: 35px;
+        }
+
         h2 {
             font-size: 18px;
-            margin-top: 30px;
+            margin-bottom: 10px;
+            font-weight: normal;
         }
+
         p {
-            line-height: 1.6;
+            line-height: 1.7;
+            margin-top: 10px;
         }
+
         ul {
             margin-left: 20px;
+            line-height: 1.6;
         }
+
         .highlight {
             font-weight: 600;
         }
-        .contact {
+
+        .info-box {
             margin-top: 30px;
+            padding: 20px;
+            background-color: #fafafa;
+            border-left: 4px solid #333;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid #ddd;
-        }
-        .phone {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .note {
             font-size: 14px;
             color: #555;
         }
@@ -56,40 +105,61 @@
 
 <div class="container">
 
-    <h1>Cours de mathématiques à domicile – Collège & Lycée</h1>
+    <div class="header">
+        <!-- PHOTO FACULTATIVE -->
+        <!-- <div class="photo">
+            <img src="photo.jpg" alt="Photo de l'enseignant">
+        </div> -->
 
-    <p>
-        Enseignant en informatique en <span class="highlight">BTS SIO et à l’Université</span>, 
-        avec <span class="highlight">5 ans d’expérience en cours particuliers</span>, 
-        j’accompagne des collégiens et lycéens en mathématiques, de la consolidation des bases à la préparation des examens.
-    </p>
-
-    <h2>Pour quels objectifs ?</h2>
-    <ul>
-        <li>Comprendre et maîtriser les notions fondamentales</li>
-        <li>Acquérir une méthode de travail efficace</li>
-        <li>Développer le raisonnement et la rigueur</li>
-        <li>Préparer le <strong>Brevet</strong> et le <strong>Baccalauréat</strong></li>
-    </ul>
-
-    <p>
-        Afin de garantir un accompagnement sérieux et personnalisé, 
-        <span class="highlight">j’accompagne volontairement un nombre limité d’élèves</span>.
-    </p>
-
-    <h2>Informations pratiques</h2>
-    <ul>
-        <li>Cours à domicile</li>
-        <li>Tarif : <strong>70 € / heure</strong> (soit <strong>35 € / heure après crédit d’impôt</strong>)</li>
-        <li><strong>CESU accepté</strong></li>
-    </ul>
-
-    <div class="contact">
-        <p class="phone">📞 06 XX XX XX XX</p>
-        <p class="note">
-            Premier échange téléphonique afin d’évaluer les besoins de l’élève.
-        </p>
+        <div>
+            <h1>Cours de mathématiques à domicile</h1>
+            <div class="subtitle">Collège & Lycée – Brevet & Baccalauréat</div>
+        </div>
     </div>
+
+    <section>
+        <p>
+            Enseignant en informatique en <span class="highlight">BTS SIO et à l’Université</span>,
+            avec <span class="highlight">5 ans d’expérience en cours particuliers</span>,
+            j’accompagne des collégiens et lycéens en mathématiques.
+        </p>
+
+        <p>
+            Mon approche vise une compréhension approfondie des notions,
+            le développement du raisonnement et l’acquisition d’une méthode de travail solide.
+        </p>
+    </section>
+
+    <section>
+        <h2>Objectifs de l’accompagnement</h2>
+        <ul>
+            <li>Consolidation des bases et remise en confiance</li>
+            <li>Méthodologie et rigueur dans le raisonnement</li>
+            <li>Préparation au Brevet et au Baccalauréat</li>
+        </ul>
+
+        <p>
+            Afin de garantir un suivi sérieux et personnalisé,
+            <span class="highlight">j’accompagne volontairement un nombre limité d’élèves</span>.
+        </p>
+    </section>
+
+    <section class="info-box">
+        <p>
+            <strong>Cours à domicile</strong><br>
+            Tarif : <strong>70 € / heure</strong> (35 € après crédit d’impôt)<br>
+            <strong>CESU accepté</strong>
+        </p>
+    </section>
+
+    <footer>
+        <p>
+            📞 Coordonnées communiquées lors du premier échange<br>
+            <span class="note">
+                Premier contact téléphonique afin d’évaluer les besoins de l’élève.
+            </span>
+        </p>
+    </footer>
 
 </div>
 
