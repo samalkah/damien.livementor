@@ -15,10 +15,11 @@
     }
 
     .page {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 100px 24px;
-    }
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
 
     /* HEADER */
     .header {
@@ -53,8 +54,9 @@
 
     /* SECTIONS */
     section {
-      margin-top: 90px;
-    }
+  margin-top: 70px;
+}
+
 
     .section-title {
       display: flex;
@@ -75,17 +77,17 @@
       margin: 0;
     }
 
-    p {
-      font-size: 18px;
-      color: #333;
-      margin-bottom: 20px;
-    }
+   p {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 16px;
+}
 
-    ul {
-      padding-left: 18px;
-      font-size: 18px;
-      color: #333;
-    }
+ul {
+  padding-left: 18px;
+  font-size: 17px;
+}
+
 
     li {
       margin-bottom: 10px;
@@ -115,6 +117,38 @@
     .phone {
       margin-top: 16px;
     }
+
+/* Grille invisible pour les sections */
+section {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  column-gap: 40px;
+  align-items: start;
+}
+
+/* Colonne gauche : titre */
+.section-title {
+  margin-bottom: 0;
+}
+
+/* Colonne droite : contenu */
+.section-content {
+  grid-column: 2;
+}
+
+/* Mobile : retour en une colonne */
+@media (max-width: 700px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  .section-content {
+    grid-column: 1;
+    margin-top: 20px;
+  }
+}
+
+    
     /* Animation douce au chargement */
 @keyframes fadeUp {
   from {
@@ -163,9 +197,9 @@
         <path d="M3 6l9-4 9 4-9 4-9-4z"></path>
         <path d="M3 10l9 4 9-4"></path>
       </svg>
-      <h2>Approche</h2>
     </div>
-
+    <div class="section-content">
+    <h2>Approche</h2>
     <p>
       Enseignant en informatique en <span class="highlight">BTS SIO et à l’Université</span>,
       titulaire d’un <span class="highlight">Master en Réseaux et Télécommunications</span>,
@@ -177,6 +211,7 @@
       en cours particuliers de mathématiques, avec une approche fondée sur la compréhension,
       la méthode et la progression dans la durée.
     </p>
+    </div>
   </section>
 
   <!-- PROPOSITION -->
@@ -186,15 +221,16 @@
         <path d="M3 3h18v18H3z"></path>
         <path d="M8 8h8M8 12h8M8 16h8"></path>
       </svg>
-      <h2>Ce que je propose</h2>
     </div>
-
+<div class="section-content">
+  <h2>Ce que je propose</h2>
     <ul>
       <li>Consolidation des bases et remise en confiance</li>
       <li>Développement du raisonnement et de la rigueur</li>
       <li>Méthodologie de travail durable</li>
       <li>Préparation ciblée aux examens</li>
     </ul>
+</div>
   </section>
 
   <!-- ORGANISATION -->
@@ -204,9 +240,9 @@
         <circle cx="12" cy="12" r="9"></circle>
         <path d="M12 7v5l3 3"></path>
       </svg>
-      <h2>Organisation</h2>
     </div>
-
+<div class="section-content">
+    <h2>Organisation</h2>
     <ul>
       <li>Cours à domicile à Strasbourg (zones accessibles à vélo)</li>
       <li>Séances de <span class="highlight">1h30 minimum</span> (jusqu’à 2h)</li>
@@ -218,6 +254,7 @@
       Afin de garantir un suivi sérieux et personnalisé,
       <span class="highlight">le nombre d’élèves suivis est volontairement limité</span>.
     </p>
+</div>
   </section>
 
   <!-- TARIFS -->
@@ -227,14 +264,15 @@
         <path d="M12 1v22"></path>
         <path d="M17 5H9a3 3 0 0 0 0 6h6a3 3 0 0 1 0 6H6"></path>
       </svg>
-      <h2>Tarifs</h2>
     </div>
-
+    <div class="section-content">
+    <h2>Tarifs</h2>
     <p>
       70 € / heure<br>
       Soit 35 € / heure après crédit d’impôt<br>
       <span class="highlight">CESU accepté</span>
     </p>
+    </div>
   </section>
 
   <hr class="separator">
@@ -246,9 +284,9 @@
         <path d="M4 4h16v16H4z"></path>
         <path d="M4 4l8 8 8-8"></path>
       </svg>
-      <h2>Contact</h2>
     </div>
-
+     <div class="section-content">
+         <h2>Contact</h2>
     <p>
       📧 <a href="mailto:damien.livementor@gmail.com">damien.livementor@gmail.com</a>
     </p>
@@ -264,6 +302,7 @@
         alt="Numéro de téléphone"
       />
     </div>
+     </div>
   </section>
 
 </main>
